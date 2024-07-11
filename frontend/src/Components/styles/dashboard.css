@@ -1,0 +1,71 @@
+/* Dashboard.module.css */
+
+/* Color Palette */
+:root {
+  --primary-color: #003366; /* Dark blue */
+  --secondary-color: #ff6d00; /* Orange */
+  --accent-color: #009688; /* Teal */
+  --background-color: #f0f0f0; /* Light gray */
+}
+
+.container {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.chart {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.chart canvas {
+  max-height: 400px;
+}
+
+.low-stock {
+  text-align: center;
+}
+
+.low-stock ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.low-stock li {
+  background-color: #ffe0b2; /* Light orange */
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    flex-direction: column;
+  }
+
+  .chart {
+    margin: 10px 0;
+  }
+}
